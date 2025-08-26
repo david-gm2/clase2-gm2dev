@@ -86,6 +86,25 @@ const PI = 3.1416;
 // * Crear dos variables de tipo string y dos variables de tipo number.
 //  Crear una nueva variable cuyo valor sea un string que incluya las cuatro variables previamente creadas.
 //  Repetir el punto anterior utilizando una estrategia diferente.
+let ciudad = "Buenos Aires";
+let pais = "Argentina";
+let habitantes = 3000000;
+let areaKm2 = 203;
+
+let descripcion1 =
+  "La ciudad de " +
+  ciudad +
+  " en " +
+  pais +
+  " tiene " +
+  habitantes +
+  " habitantes y un area de " +
+  areaKm2 +
+  " km2.";
+console.log(descripcion1);
+
+let descripcion2 = `La ciudad de ${ciudad} en ${pais} tiene ${habitantes} habitantes y un area de ${areaKm2} km2.`;
+console.log(descripcion2);
 
 // * Crear dos variables de tipo number.
 //  Crear cuatro nuevas variables de tipo boolean comparando los dos valores utilizando operadores de comparación.
