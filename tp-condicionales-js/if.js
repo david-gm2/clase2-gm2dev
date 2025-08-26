@@ -16,6 +16,9 @@ if (edadUsuario >= numRef) {
 }
 
 // * Crea un bloque de código que compare dos números e imprima en consola un valor booleano.
+if (A === B) {
+  console.log(true);
+}
 
 // * Crea un bloque de código que compare dos nombres, y si ambos son iguales imprima en consola el nombre.
 
