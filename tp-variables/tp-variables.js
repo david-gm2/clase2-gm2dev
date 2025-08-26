@@ -54,6 +54,30 @@ console.log(esVerdadero, esFalso);
 //  Reasignar un nuevo valor a esa misma variable para que sea su valor + 1.
 //  Repetir la operación anterior utilizando una estrategia diferente
 //  Repetir ambas operaciones con operadores de resta, multiplicación y división.
+let contador = 5;
+contador = contador + 1;
+console.log(contador);
+
+contador += 1;
+console.log(contador);
+
+contador = contador - 1;
+console.log(contador);
+
+contador -= 1;
+console.log(contador);
+
+contador = contador * 2;
+console.log(contador);
+
+contador *= 2;
+console.log(contador);
+
+contador = contador / 2;
+console.log(contador);
+
+contador /= 2;
+console.log(contador);
 
 // * Declarar una constante e intentar reasignarle otro valor luego de su declaración. Que output recibis?
 
