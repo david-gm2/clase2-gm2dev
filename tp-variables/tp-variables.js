@@ -135,6 +135,10 @@ let propina = (totalCuenta * porcentajePropina) / 100;
 console.log(propina);
 
 // * Crea un bloque de código que calcule el precio final de un producto luego de aplicar un descuento.
+let precioProducto = 500;
+let descuento = 10;
+let precioFinal = precioProducto - (precioProducto * descuento) / 100;
+console.log(precioFinal);
 
 // * Crea un bloque de código que, tomando el año de nacimiento de una persona, devuelva su edad actual.
 
