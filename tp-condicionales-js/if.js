@@ -8,6 +8,12 @@ if (A > B) {
 }
 
 // * Crea un bloque de código que tome la edad de un usuario y la compare con un número de referencia. Si la edad es mayor al número de referencia, imprimir en consola un mensaje.
+let edadUsuario = 18;
+let numRef = 18;
+
+if (edadUsuario >= numRef) {
+  console.log('Acceso permitido');
+}
 
 // * Crea un bloque de código que compare dos números e imprima en consola un valor booleano.
 
