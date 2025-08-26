@@ -40,6 +40,10 @@ let modulo = numeroA % numeroB;
 console.log(modulo);
 
 // * Declarar una variable de tipo number y otra de tipo string. Luego sumar ambas variables y guardar su resultado en una nueva variable. De qué tipo será la tercera variable?
+let numero = 50;
+let texto = "30";
+let resultado = numero + texto;
+console.log(resultado, typeof resultado);
 
 // * Declarar una variable de tipo booleano cuyo nombre represente su valor. Luego declarar una nueva variable cuyo valor sea opuesto a la variable previamente creada.
 
