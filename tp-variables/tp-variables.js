@@ -108,6 +108,15 @@ console.log(descripcion2);
 
 // * Crear dos variables de tipo number.
 //  Crear cuatro nuevas variables de tipo boolean comparando los dos valores utilizando operadores de comparación.
+let valor1 = 7;
+let valor2 = 10;
+
+let esIgual = valor1 === valor2;
+let esDiferente = valor1 !== valor2;
+let esMayor = valor1 > valor2;
+let esMenor = valor1 < valor2;
+
+console.log(esIgual, esDiferente, esMayor, esMenor);
 
 // * Declarar cinco variables de tipo string cuyo valor contenga operaciones aritméticas. Intenta utilizar diferentes estrategias.
 
