@@ -42,3 +42,7 @@ if (A > 0) {
 }
 
 // * Crea un bloque de código que imprima en consola un número en caso de que NO sea un número negativo.
+if (A <= 0) {
+  console.log(A)
+}
+
