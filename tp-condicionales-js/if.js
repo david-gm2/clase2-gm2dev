@@ -37,5 +37,8 @@ if (nombreReferenciaCliente === nombreCliente) {
 }
 
 // * Crea un bloque de código que imprima en consola un número en caso de que sea un número negativo.
+if (A > 0) {
+  console.log(A)
+}
 
 // * Crea un bloque de código que imprima en consola un número en caso de que NO sea un número negativo.
