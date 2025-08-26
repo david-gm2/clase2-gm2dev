@@ -119,6 +119,13 @@ let esMenor = valor1 < valor2;
 console.log(esIgual, esDiferente, esMayor, esMenor);
 
 // * Declarar cinco variables de tipo string cuyo valor contenga operaciones aritméticas. Intenta utilizar diferentes estrategias.
+let sumaTexto = "5 + 3";
+let restaTexto = "10 - 2";
+let multiTexto = "4 * 2";
+let divTexto = "8 / 2";
+let moduloTexto = "9 % 2";
+
+console.log(sumaTexto, restaTexto, multiTexto, divTexto, moduloTexto);
 
 // * Crea un bloque de código que, utilizando variables con nombres representativos, calcule la cantidad de propina a dejar en un restaurante, basada en el total de la cuenta y el porcentaje de propina ingresado por el usuario.
 let totalCuenta = 1200;
