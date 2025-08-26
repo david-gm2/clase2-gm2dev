@@ -4,6 +4,7 @@
 let nombreUsuario = "Javier";
 
 // * Declarar una variable de tipo number cuyo nombre represente de forma clara su contenido.
+let edadUsuario = 25;
 
 // * Declarar una variable de tipo boolean cuyo nombre represente de forma clara su contenido.
 
