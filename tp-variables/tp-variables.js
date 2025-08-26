@@ -1,6 +1,7 @@
 // TODO: TP VARIABLES JS
 
 // * Declarar una variable de tipo string cuyo nombre represente de forma clara su contenido.
+let nombreUsuario = "Javier";
 
 // * Declarar una variable de tipo number cuyo nombre represente de forma clara su contenido.
 
