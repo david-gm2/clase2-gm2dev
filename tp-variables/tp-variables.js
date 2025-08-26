@@ -141,5 +141,10 @@ let precioFinal = precioProducto - (precioProducto * descuento) / 100;
 console.log(precioFinal);
 
 // * Crea un bloque de código que, tomando el año de nacimiento de una persona, devuelva su edad actual.
+let anioNacimiento = 1992;
+const anioActual = new Date();
+
+let edad = anioActual.getFullYear() - anioNacimiento;
+console.log(`Edad actual: ${edad}`);
 
 // * Crea un bloque de código que, definiendo las variables necesarias, calcule el área de un círculo, un cuadrado y un triángulo.
