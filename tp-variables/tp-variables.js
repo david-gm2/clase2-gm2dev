@@ -21,6 +21,23 @@ console.log(nombreCompleto);
 //  Luego declarar una nueva variable cuyo valor sea la multiplicación de las dos variables previamente creadas.
 //  Luego declarar una nueva variable cuyo valor sea la división de las dos variables previamente creadas.
 //  Luego declarar una nueva variable cuyo valor sea el módulo entre las dos variables previamente creadas.
+let numeroA = 10;
+let numeroB = 3;
+
+let suma = numeroA + numeroB;
+console.log(suma);
+
+let resta = numeroA - numeroB;
+console.log(resta);
+
+let multiplicacion = numeroA * numeroB;
+console.log(multiplicacion);
+
+let division = numeroA / numeroB;
+console.log(division);
+
+let modulo = numeroA % numeroB;
+console.log(modulo);
 
 // * Declarar una variable de tipo number y otra de tipo string. Luego sumar ambas variables y guardar su resultado en una nueva variable. De qué tipo será la tercera variable?
 
