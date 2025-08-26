@@ -129,6 +129,10 @@ console.log(sumaTexto, restaTexto, multiTexto, divTexto, moduloTexto);
 
 // * Crea un bloque de código que, utilizando variables con nombres representativos, calcule la cantidad de propina a dejar en un restaurante, basada en el total de la cuenta y el porcentaje de propina ingresado por el usuario.
 let totalCuenta = 1200;
+let porcentajePropina = 15;
+
+let propina = (totalCuenta * porcentajePropina) / 100;
+console.log(propina);
 
 // * Crea un bloque de código que calcule el precio final de un producto luego de aplicar un descuento.
 
