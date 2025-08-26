@@ -80,6 +80,8 @@ contador /= 2;
 console.log(contador);
 
 // * Declarar una constante e intentar reasignarle otro valor luego de su declaración. Que output recibis?
+const PI = 3.1416;
+// PI = 3; //TypeError: Assignment to constant variable.
 
 // * Crear dos variables de tipo string y dos variables de tipo number.
 //  Crear una nueva variable cuyo valor sea un string que incluya las cuatro variables previamente creadas.
