@@ -10,6 +10,10 @@ let edadUsuario = 25;
 let esMayorDeEdad = true;
 
 // * Declarar dos variables de tipo string. Luego declarar una nueva variable cuyo valor sea la concatenación de las dos variables previamente creadas.
+let nombre = "Juan";
+let apellido = "Pérez";
+let nombreCompleto = nombre + " " + apellido;
+console.log(nombreCompleto);
 
 // * Declarar dos variables de tipo number.
 //  Luego declarar una nueva variable cuyo valor sea la suma de las dos variables previamente creadas.
