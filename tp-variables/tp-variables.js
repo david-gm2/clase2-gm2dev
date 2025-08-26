@@ -148,3 +148,13 @@ let edad = anioActual.getFullYear() - anioNacimiento;
 console.log(`Edad actual: ${edad}`);
 
 // * Crea un bloque de código que, definiendo las variables necesarias, calcule el área de un círculo, un cuadrado y un triángulo.
+let radio = 5;
+let ladoCuadrado = 4;
+let baseTriangulo = 6;
+let alturaTriangulo = 3;
+
+let areaCirculo = Math.PI * radio ** 2;
+let areaCuadrado = ladoCuadrado ** 2;
+let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+
+console.log(areaCirculo, areaCuadrado, areaTriangulo);
