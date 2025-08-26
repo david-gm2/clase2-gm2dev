@@ -21,6 +21,12 @@ if (A === B) {
 }
 
 // * Crea un bloque de código que compare dos nombres, y si ambos son iguales imprima en consola el nombre.
+let nombreUsuairo = 'Javier';
+let nombreRef = 'Javier';
+
+if (nombreRef === nombreUsuairo) {
+  console.log(nombreUsuairo);
+}
 
 // * Crea un bloque de código que compare dos nombres, y si ambos son diferentes imprima en consola un mensaje.
 
