@@ -3,6 +3,9 @@
 // TODO: If:
 
 // * Crea un bloque de código que compare dos variables numéricas. Si el número A es mayor que el número B, imprimir en consola ‘El número A es mayor a B‘.
+if (A > B) {
+  console.log(`El numero ${A} es mayo a ${B}`);
+}
 
 // * Crea un bloque de código que tome la edad de un usuario y la compare con un número de referencia. Si la edad es mayor al número de referencia, imprimir en consola un mensaje.
 
