@@ -29,6 +29,12 @@ if (nombreRef === nombreUsuairo) {
 }
 
 // * Crea un bloque de código que compare dos nombres, y si ambos son diferentes imprima en consola un mensaje.
+let nombreCliente = 'Javier';
+let nombreReferenciaCliente = 'Toni';
+
+if (nombreReferenciaCliente === nombreCliente) {
+  console.log(`El nombre ${nombreCliente} es disferente a ${nombreReferenciaCliente}`);
+}
 
 // * Crea un bloque de código que imprima en consola un número en caso de que sea un número negativo.
 
