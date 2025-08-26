@@ -7,6 +7,7 @@ let nombreUsuario = "Javier";
 let edadUsuario = 25;
 
 // * Declarar una variable de tipo boolean cuyo nombre represente de forma clara su contenido.
+let esMayorDeEdad = true;
 
 // * Declarar dos variables de tipo string. Luego declarar una nueva variable cuyo valor sea la concatenación de las dos variables previamente creadas.
 
