@@ -46,6 +46,9 @@ let resultado = numero + texto;
 console.log(resultado, typeof resultado);
 
 // * Declarar una variable de tipo booleano cuyo nombre represente su valor. Luego declarar una nueva variable cuyo valor sea opuesto a la variable previamente creada.
+let esVerdadero = true;
+let esFalso = !esVerdadero;
+console.log(esVerdadero, esFalso);
 
 // * Crear una variable de tipo number.
 //  Reasignar un nuevo valor a esa misma variable para que sea su valor + 1.
