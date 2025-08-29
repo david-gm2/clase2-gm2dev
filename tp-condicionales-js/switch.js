@@ -49,8 +49,6 @@ switch (genToUpper) {
 
 // * Crea un bloque de código que reciba un número del 1 al 10. Utiliza switch para imprimir en consola ‘Uno’, ‘Dos’, ‘Tres’, o ‘Mayor a 3’, según corresponda.
 // * Crea un bloque de código que tome de referencia una letra. Utiliza switch para imprimir en consola si es una vocal, una consonante, o un caracter especial.
-<<<<<<< Updated upstream
-=======
 
 let l = "a";
 
@@ -93,5 +91,4 @@ switch (tipo) {
     console.log(`${l} -> Otro tipo de carácter`);
 }
 
->>>>>>> Stashed changes
 // * Crea un bloque de código que tome de referencia un número del 1 al 4. Utiliza switch para imprimir en consola la estación del año correspondiente.
