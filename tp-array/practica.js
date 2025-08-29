@@ -13,7 +13,13 @@ function encontrarSuma(number) {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 encontrarSuma(number);
+=======
+// encontrarSuma(exercises.example1);
+// encontrarSuma(exercises.example2);
+// encontrarSuma(exercises.example3);
+>>>>>>> Stashed changes
 =======
 // encontrarSuma(exercises.example1);
 // encontrarSuma(exercises.example2);
