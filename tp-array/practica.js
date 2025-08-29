@@ -14,32 +14,15 @@ let exercises = {
 };
 
 function encontrarSuma(number) {
-  for (let i = 0; i < number.nums.length; i++) {
-    for (let j = i + 1; j < number.nums.length; j++) {
-      if (number.nums[i] + number.nums[j] === number.target) {
-        console.log([i, j]);
-        return;
-      }
+  for (let i = 0; i < number.nums.length - 1; i++) {
+    let suma = number.nums[i] + number.nums[i + 1];
+    if (suma === number.target) {
+      console.log([number.nums[i], number.nums[i + 1]]);
     }
   }
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-encontrarSuma(exercises.example1);
-// encontrarSuma(exercises.example2);
-// encontrarSuma(exercises.example3);
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-encontrarSuma(number);
-=======
+
 // encontrarSuma(exercises.example1);
 // encontrarSuma(exercises.example2);
 // encontrarSuma(exercises.example3);
->>>>>>> Stashed changes
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
