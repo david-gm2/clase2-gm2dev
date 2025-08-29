@@ -22,8 +22,6 @@ function encontrarSuma(number) {
   }
 }
 
-
 // encontrarSuma(exercises.example1);
 // encontrarSuma(exercises.example2);
 // encontrarSuma(exercises.example3);
-
