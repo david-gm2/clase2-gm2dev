@@ -1,6 +1,6 @@
 let exercises = {
   example1: {
-    nums: [2, 7, 11, 15],
+    nums: [2, 15, 11, 7],
     target: 9,
   },
   example2: {
