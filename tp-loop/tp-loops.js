@@ -165,6 +165,24 @@ function exercise6() {
 // exercise6();
 
 // TODO: 7. Utiliza un bucle do...while para pedir al usuario que ingrese un número positivo. Continúa pidiendo hasta que ingrese un número positivo.
+
+function exercise7() {
+  let number = 0;
+  do {
+    number = parseInt(prompt("Ingrese un numero positivo: "));
+    if (!verifyNumber(number)) {
+      console.log("Ingrese un numero valido :)");
+      continue;
+    }
+    if (number < 0) {
+      console.log("El número debe ser positivo.");
+      continue;
+    }
+  } while (number < 0);
+}
+
+// exercise7();
+
 // TODO: 8. Crea un array de nombres. Utiliza un bucle for-of para imprimir cada nombre en la consola.
 // TODO: 9. Crea un array de números. Utiliza un bucle for-of para imprimir en la consola los números hasta encontrar el número 5, luego detén el bucle
 // TODO: 10. Utiliza un bucle for-of para imprimir en la consola cada elemento del array y su posición (índice)
