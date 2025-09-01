@@ -184,6 +184,17 @@ function exercise7() {
 // exercise7();
 
 // TODO: 8. Crea un array de nombres. Utiliza un bucle for-of para imprimir cada nombre en la consola.
+
+function exercise8() {
+  let nombres = ["juan", "gabrel", "ivan", "david"];
+
+  for (let element of nombres) {
+    console.log(element);
+  }
+}
+
+// exercise8();
+
 // TODO: 9. Crea un array de números. Utiliza un bucle for-of para imprimir en la consola los números hasta encontrar el número 5, luego detén el bucle
 // TODO: 10. Utiliza un bucle for-of para imprimir en la consola cada elemento del array y su posición (índice)
 // TODO: 11. Crea un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 2.
