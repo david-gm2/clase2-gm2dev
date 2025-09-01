@@ -196,6 +196,18 @@ function exercise8() {
 // exercise8();
 
 // TODO: 9. Crea un array de números. Utiliza un bucle for-of para imprimir en la consola los números hasta encontrar el número 5, luego detén el bucle
+
+function exercise9() {
+  let numeros = [1, 2, 3, 4, 5, 6, 7];
+
+  for (const element of numeros) {
+    if (element === 5) break;
+    console.log(element);
+  }
+}
+
+// exercise9();
+
 // TODO: 10. Utiliza un bucle for-of para imprimir en la consola cada elemento del array y su posición (índice)
 // TODO: 11. Crea un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 2.
 // TODO: 12. Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, cuando el usuario y/o la contraseña son incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos, debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables.
