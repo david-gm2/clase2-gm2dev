@@ -147,6 +147,23 @@ function exercise5() {
 // exercise5();
 
 // TODO: 6. Crea un objeto con algunas propiedades y utiliza un bucle for...in para imprimir cada propiedad y su valor en la consola.
+
+function exercise6() {
+  let usuario = {
+    nombre: "David",
+    edad: 19,
+    nacionalidad: "Colombiana",
+  };
+
+  for (var i in usuario) {
+    if (usuario.hasOwnProperty(i)) {
+      console.log(`${i}: ${usuario[i]}`);
+    }
+  }
+}
+
+// exercise6();
+
 // TODO: 7. Utiliza un bucle do...while para pedir al usuario que ingrese un número positivo. Continúa pidiendo hasta que ingrese un número positivo.
 // TODO: 8. Crea un array de nombres. Utiliza un bucle for-of para imprimir cada nombre en la consola.
 // TODO: 9. Crea un array de números. Utiliza un bucle for-of para imprimir en la consola los números hasta encontrar el número 5, luego detén el bucle
