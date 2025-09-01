@@ -44,6 +44,50 @@ function exercise2() {
 // exercise2();
 
 // TODO: 3. Un número entero mayor que 1 es llamado primo si no puede ser dividido sin un resto por ningún número excepto 1 y él mismo. En otras palabras, n > 1 es un primo si no puede ser dividido exactamente por ningún número excepto 1 y n. Por ejemplo, 5 es un primo, porque no puede ser dividido exactamente por 2, 3 y 4. Escribe el código que muestre números primos en el intervalo de 2 a n. Ejemplo: Para n = 10 el resultado será 2, 3, 5, 7.
+
+function exercise3() {
+  let rango = -1;
+
+  while (true) {
+    rango = parseInt(
+      prompt(
+        "Ingrese el rango de numeros para ver cuales son primos (escriba '0' si desea salir): "
+      )
+    );
+    if (!verifyNumber(rango)) {
+      console.log("Ingrese un numero valido :)");
+      continue;
+    }
+    if (rango === 0) {
+      console.log("👋 Saliste del programa.");
+      break;
+    }
+
+    if (rango <= 2) {
+      console.log("El número debe ser mayor a 2.");
+      continue;
+    }
+
+    let multiplos = [];
+
+    for (let i = 2; i <= rango; i++) {
+      let primo = true;
+      for (let j = 2; j < i; j++) {
+        if (rango % j === 0) {
+          primo = true;
+        }
+        if (primo) {
+          multiplos.push(j);
+        }
+      }
+    }
+
+    console.log(multiplos);
+  }
+}
+
+// exercise3();
+
 // TODO: 4. Ingrese un número y mostrar su potencia n^2, repetir este proceso hasta que se ingrese un número negativo
 // TODO: 5. Pedir un número hasta que se ingrese el número 0 o negativo, luego mostrar la suma de todos los números ingresados
 // TODO: 6. Crea un objeto con algunas propiedades y utiliza un bucle for...in para imprimir cada propiedad y su valor en la consola.
