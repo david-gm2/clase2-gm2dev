@@ -258,6 +258,37 @@ function exercise11() {
 // exercise11();
 
 // TODO: 12. Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, cuando el usuario y/o la contraseña son incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos, debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables.
+
+function exercise12() {
+  let usuario = {
+    nombre: "david",
+    password: "123",
+  };
+
+  let intentos = 0;
+
+  while (intentos < 3) {
+    nombreIngresado = prompt("Ingrese el nombre de usuairo: ");
+    passwordIngresado = prompt("Ingrese el password del usuairo: ");
+
+    if (
+      nombreIngresado != usuario.nombre ||
+      passwordIngresado != usuario.password
+    ) {
+      intentos++;
+      console.log("El nombre de usuarioo o contrasena son incorrectos");
+      console.log(`Le quedan ${3 - intentos} intentos`);
+    } else if (
+      nombreIngresado === usuario.nombre &&
+      passwordIngresado === usuario.password
+    ) {
+      console.log(`Bienvenido ${usuaior.nombre}`);
+    }
+  }
+}
+
+// exercise12();
+
 // TODO: 13. Crear una función que reciba dos parámetros(number, length) y devuelva un array con los múltiplos para ese número y la cantidad recibida por parámetros. Ejemplo:
 // - arrayMultiplos(2, 10) debe retornar [2, 4, 6, 8, 10, 12, 14, 16, 18, 20].
 // - arrayMultiplos(17, 6) debe retornar [17, 34, 51, 68, 85, 102].
