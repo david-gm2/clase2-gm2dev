@@ -209,6 +209,18 @@ function exercise9() {
 // exercise9();
 
 // TODO: 10. Utiliza un bucle for-of para imprimir en la consola cada elemento del array y su posición (índice)
+
+function exercise10() {
+  let numeros = ["frutilla", "color", "coche", "abogado"];
+
+  // El metodo .entries() itera sobre el array devolviendo un array [index, element]
+  for (const [index, element] of numeros.entries()) {
+    console.log(`Element: ${element}, Position: ${index}`);
+  }
+}
+
+// exercise10();
+
 // TODO: 11. Crea un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 2.
 // TODO: 12. Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, cuando el usuario y/o la contraseña son incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos, debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables.
 // TODO: 13. Crear una función que reciba dos parámetros(number, length) y devuelva un array con los múltiplos para ese número y la cantidad recibida por parámetros. Ejemplo:
