@@ -222,6 +222,41 @@ function exercise10() {
 // exercise10();
 
 // TODO: 11. Crea un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 2.
+
+function exercise11() {
+  while (true) {
+    let numFactorial = parseInt(
+      prompt(
+        'Ingrese  un numero para mostrar su factorial (escriba "0" para salir del programa): '
+      )
+    );
+
+    if (!verifyNumber(numFactorial)) {
+      console.log("⚠️ Ingrese un numero valido :)");
+      continue;
+    }
+    if (numFactorial === 0) {
+      console.log("👋 Saliste del programa.");
+      break;
+    }
+
+    if (numFactorial < 0) {
+      console.log("❌ El número debe ser positivo");
+      continue;
+    }
+
+    let resultadoFactorial = 1;
+
+    for (let i = numFactorial; i >= 1; i--) {
+      resultadoFactorial *= i;
+    }
+
+    console.log(`El factorial de ${numFactorial} es ${resultadoFactorial}`);
+  }
+}
+
+// exercise11();
+
 // TODO: 12. Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, cuando el usuario y/o la contraseña son incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos, debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables.
 // TODO: 13. Crear una función que reciba dos parámetros(number, length) y devuelva un array con los múltiplos para ese número y la cantidad recibida por parámetros. Ejemplo:
 // - arrayMultiplos(2, 10) debe retornar [2, 4, 6, 8, 10, 12, 14, 16, 18, 20].
