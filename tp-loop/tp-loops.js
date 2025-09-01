@@ -89,6 +89,31 @@ function exercise3() {
 // exercise3();
 
 // TODO: 4. Ingrese un número y mostrar su potencia n^2, repetir este proceso hasta que se ingrese un número negativo
+
+function exercise4() {
+  let numPotencia = 0;
+
+  while (true) {
+    numPotencia = parseInt(
+      prompt(
+        "Ingrese un numero para saber su n^2 (escriba un numero negatvo (ej.: -2) para salir del programa): "
+      )
+    );
+    if (!verifyNumber(numPotencia)) {
+      console.log("Ingrese un numero valido :)");
+      continue;
+    }
+    if (numPotencia < 0) {
+      console.log("👋 Saliste del programa.");
+      break;
+    }
+
+    console.log(`La potencia n^2 de ${numPotencia} = ${numPotencia ** 2}`);
+  }
+}
+
+// exercise4();
+
 // TODO: 5. Pedir un número hasta que se ingrese el número 0 o negativo, luego mostrar la suma de todos los números ingresados
 // TODO: 6. Crea un objeto con algunas propiedades y utiliza un bucle for...in para imprimir cada propiedad y su valor en la consola.
 // TODO: 7. Utiliza un bucle do...while para pedir al usuario que ingrese un número positivo. Continúa pidiendo hasta que ingrese un número positivo.
