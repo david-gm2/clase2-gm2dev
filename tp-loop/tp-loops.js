@@ -1,4 +1,8 @@
 // ** Loops
+const prompt = require("prompt-sync")();
+function verifyNumber(...valores) {
+  return valores.every((v) => typeof v === "number" && !Number.isNaN(v));
+}
 // TODO: 1. Usa el bucle for para mostrar números pares del 2 al 30.
 
 function exercise1() {
