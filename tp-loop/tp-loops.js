@@ -115,6 +115,37 @@ function exercise4() {
 // exercise4();
 
 // TODO: 5. Pedir un número hasta que se ingrese el número 0 o negativo, luego mostrar la suma de todos los números ingresados
+
+function exercise5() {
+  let numSuma = [];
+
+  while (true) {
+    num = parseInt(
+      prompt(
+        "Ingrese todos los numeros a suamr (escriba un numero negatvo (ej.: '-2') o '0' para salir del programa): "
+      )
+    );
+    if (!verifyNumber(num)) {
+      console.log("Ingrese un numero valido :)");
+      continue;
+    }
+    if (num <= 0) {
+      console.log("👋 Saliste del programa.");
+      break;
+    }
+
+    numSuma.push(num);
+    console.log(`El numero ${num} a sido ingresado correctamente`);
+  }
+
+  if (numSuma.length != 0) {
+    let sumaDeTodosLosNumeros = numSuma.reduce((acum, curr) => acum + curr, 0);
+    console.log(`La sumatoria fianl es: ${sumaDeTodosLosNumeros}`);
+  }
+}
+
+// exercise5();
+
 // TODO: 6. Crea un objeto con algunas propiedades y utiliza un bucle for...in para imprimir cada propiedad y su valor en la consola.
 // TODO: 7. Utiliza un bucle do...while para pedir al usuario que ingrese un número positivo. Continúa pidiendo hasta que ingrese un número positivo.
 // TODO: 8. Crea un array de nombres. Utiliza un bucle for-of para imprimir cada nombre en la consola.
