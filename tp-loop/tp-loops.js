@@ -10,6 +10,39 @@ function exercise1() {
 // exercise1();
 
 // TODO: 2. Escribe un bucle que solicite un número mayor que 250. Si el usuario ingresa otro número debes pedirle que ingrese un valor nuevo El bucle debe pedir un número hasta que el usuario ingrese un número mayor que 250 o lo cancele Aquí podemos asumir que el usuario solo ingresará números.
+
+function exercise2() {
+  let numIngresado = -1;
+
+  while (true) {
+    numIngresado = parseInt(
+      prompt('Ingrese un número mayor a 250 (escriba "0" si desea salir): ')
+    );
+
+    if (!verifyNumber(numIngresado)) {
+      console.log("Ingrese un número válido :)");
+      continue;
+    }
+
+    if (numIngresado === 0) {
+      console.log("👋 Saliste del programa.");
+      break;
+    }
+
+    if (numIngresado <= 250) {
+      console.log("❌ El número debe ser mayor a 250");
+      continue;
+    }
+
+    console.log(
+      `✅ Número validado correctamente\nNúmero ingresado: ${numIngresado}`
+    );
+    break;
+  }
+}
+
+// exercise2();
+
 // TODO: 3. Un número entero mayor que 1 es llamado primo si no puede ser dividido sin un resto por ningún número excepto 1 y él mismo. En otras palabras, n > 1 es un primo si no puede ser dividido exactamente por ningún número excepto 1 y n. Por ejemplo, 5 es un primo, porque no puede ser dividido exactamente por 2, 3 y 4. Escribe el código que muestre números primos en el intervalo de 2 a n. Ejemplo: Para n = 10 el resultado será 2, 3, 5, 7.
 // TODO: 4. Ingrese un número y mostrar su potencia n^2, repetir este proceso hasta que se ingrese un número negativo
 // TODO: 5. Pedir un número hasta que se ingrese el número 0 o negativo, luego mostrar la suma de todos los números ingresados
