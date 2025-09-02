@@ -77,12 +77,12 @@ function exercise3() {
     for (let i = 2; i <= rango; i++) {
       let primo = true;
       for (let j = 2; j < i; j++) {
-        if (rango % j === 0) {
-          primo = true;
+        if (i % j === 0) {
+          primo = false;
         }
-        if (primo) {
-          multiplos.push(j);
-        }
+      }
+      if (primo) {
+        multiplos.push(i);
       }
     }
 
@@ -296,6 +296,7 @@ function exercise12() {
 // TODO: 13. Crear una función que reciba dos parámetros(number, length) y devuelva un array con los múltiplos para ese número y la cantidad recibida por parámetros. Ejemplo:
 // - arrayMultiplos(2, 10) debe retornar [2, 4, 6, 8, 10, 12, 14, 16, 18, 20].
 // - arrayMultiplos(17, 6) debe retornar [17, 34, 51, 68, 85, 102].
+
 // 14. Escribe una función llamada arrayContiene que reciba dos parámetros: un array y un elemento. La función debe comprobar si el elemento existe dentro del array. Devuelve "true" si está, o "false" si no está.
 // 15. Escribe una función llamada agregarNumeros que reciba un arreglo de enteros. La función debe sumar todos los enteros y devolver el valor de la suma.
 // 16. Escribe una función llamada promedioResultado que reciba un arreglo de enteros representando resultados de tests. La función debe iterar los elementos del array, calcular y devolver el promedio de puntajes.
