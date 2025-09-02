@@ -115,6 +115,25 @@ const exercise7 = () => {
 
 // TODO: Ejercicio 8: Calcular Promedio de Notas con .forEach
 // * Escribe una función que reciba un array de objetos que representan estudiantes, donde cada objeto tiene las propiedades nombre y nota. La función debe calcular y retornar el promedio de las notas usando el método .forEach.
+
+const exercise8 = () => {
+  const estudiantes = [
+    { nombre: "david", nota: 6 },
+    { nombre: "ivan", nota: 4 },
+    { nombre: "alex", nota: 5 },
+  ];
+
+  function crearPromedioEstudiantes(estudiantes) {
+    let contador = 0;
+    estudiantes.forEach((est) => (contador = contador + est.nota));
+    return contador / estudiantes.length;
+  }
+
+  const promedios = crearPromedioEstudiantes(estudiantes);
+  console.log(promedios);
+};
+// exercise8();
+
 // TODO: Ejercicio 9: Crear Lista de Productos con Precios Descontados con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad producto y precio. La función debe retornar un nuevo array de objetos, donde cada objeto tenga una propiedad adicional precioDescuento que sea el precio original con un 10% de descuento. Luego, usa .forEach para imprimir cada producto con su precio original y su precio con descuento.
 // TODO: Ejercicio 10: Crear Lista de Libros con .map y .forEach
