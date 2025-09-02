@@ -76,6 +76,21 @@ const exercise5 = () => {
 
 // TODO: Ejercicio 6: Calcular Descuentos con .map y .forEach
 // * Escribe una función que reciba un array de precios y devuelva un nuevo array con un descuento del 10% aplicado a cada precio usando .map. Luego, usa .forEach para imprimir cada precio con su descuento.
+
+const exercise6 = () => {
+  let precios = [2999, 4900, 500, 2300, 4300];
+  let descuento = 0.1;
+
+  function hacerDescuento(preciosProductos, descuentoProducto) {
+    return preciosProductos.map((prod) => prod * (1 - descuentoProducto));
+  }
+
+  const precioDescuento = hacerDescuento(precios, descuento);
+
+  console.log(precioDescuento);
+};
+// exercise6();
+
 // TODO: Ejercicio 7: Transformar Objetos con .map
 // * Crea una función que reciba un array de objetos que representan estudiantes, donde cada objeto tiene las propiedades nombre y nota. La función debe retornar un nuevo array de objetos, donde cada objeto tenga las mismas propiedades, pero con una propiedad adicional aprobada que sea true si la nota es mayor o igual a 5, y false en caso contrario. Usa el método .map.
 // TODO: Ejercicio 8: Calcular Promedio de Notas con .forEach
