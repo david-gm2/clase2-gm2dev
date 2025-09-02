@@ -93,6 +93,26 @@ const exercise6 = () => {
 
 // TODO: Ejercicio 7: Transformar Objetos con .map
 // * Crea una función que reciba un array de objetos que representan estudiantes, donde cada objeto tiene las propiedades nombre y nota. La función debe retornar un nuevo array de objetos, donde cada objeto tenga las mismas propiedades, pero con una propiedad adicional aprobada que sea true si la nota es mayor o igual a 5, y false en caso contrario. Usa el método .map.
+
+const exercise7 = () => {
+  const estudiantes = [
+    { nombre: "david", nota: 9 },
+    { nombre: "ivan", nota: 2 },
+    { nombre: "alex", nota: 5 },
+  ];
+
+  function resultadoMateria(estudiantes) {
+    return estudiantes.map((est) => ({
+      ...est,
+      aprobada: est.nota >= 5,
+    }));
+  }
+
+  let resultadoEstudiantes = resultadoMateria(estudiantes);
+  console.log(resultadoEstudiantes);
+};
+// exercise7();
+
 // TODO: Ejercicio 8: Calcular Promedio de Notas con .forEach
 // * Escribe una función que reciba un array de objetos que representan estudiantes, donde cada objeto tiene las propiedades nombre y nota. La función debe calcular y retornar el promedio de las notas usando el método .forEach.
 // TODO: Ejercicio 9: Crear Lista de Productos con Precios Descontados con .map y .forEach
