@@ -2,6 +2,17 @@
 
 // TODO: Ejercicio 1: Duplicar Elementos con .map
 // * Crea una función que reciba un array de números y devuelva un nuevo array con cada número duplicado usando el método .map.
+
+const exercise1 = () => {
+  let arrayNumeros = [1, 2, 3, 4, 5, 6];
+
+  let nuevoArray = arrayNumeros.map((a) => {
+    return a * 2;
+  });
+  console.log(nuevoArray);
+};
+// exercise1();
+
 // TODO: Ejercicio 2: Convertir Números a Strings con .map
 // * Escribe una función que reciba un array de números y devuelva un nuevo array con cada número convertido a string usando el método .map.
 // TODO: Ejercicio 3: Calcular el Promedio con .forEach
