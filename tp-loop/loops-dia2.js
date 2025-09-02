@@ -43,6 +43,19 @@ const exercise3 = () => {
 
 // TODO: Ejercicio 4: Contar Elementos con .forEach
 // * Escribe una función que reciba un array de números y cuente cuántos de ellos son mayores a 10  sando el método .forEach.
+
+const exercise4 = () => {
+  let arrayNumeros = [2, 23, 1, 5, 67, 4, 34, 11, 23, 1, 8, 6, 10];
+
+  let contador = 0;
+
+  arrayNumeros.forEach((element) => {
+    element > 10 ? contador++ : null;
+  });
+  console.log(contador);
+};
+// exercise4();
+
 // TODO: Ejercicio 5: Crear Lista de Compras con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad producto y cantidad. La función debe retornar un array de strings que describen cada producto y su cantidad usando .map y .forEach.
 // TODO: Ejercicio 6: Calcular Descuentos con .map y .forEach
