@@ -136,5 +136,26 @@ const exercise8 = () => {
 
 // TODO: Ejercicio 9: Crear Lista de Productos con Precios Descontados con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad producto y precio. La función debe retornar un nuevo array de objetos, donde cada objeto tenga una propiedad adicional precioDescuento que sea el precio original con un 10% de descuento. Luego, usa .forEach para imprimir cada producto con su precio original y su precio con descuento.
+
+const exercise9 = () => {
+  const inventario = [
+    { producto: "zapatillas", precio: 14000 },
+    { producto: "buzo", precio: 17000 },
+    { producto: "gorra", precio: 8000 },
+  ];
+  const descuento = 0.1;
+
+  function hacerDescuento(inventario, descuento) {
+    return inventario.map((prod) => ({
+      ...prod,
+      precioConDescuento: prod.precio * (1 - descuento),
+    }));
+  }
+  const productosConDescuento = hacerDescuento(inventario, descuento);
+
+  productosConDescuento.forEach((p) => console.log(p));
+};
+// exercise9();
+
 // TODO: Ejercicio 10: Crear Lista de Libros con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad titulo y autor. La función debe retornar un nuevo array de strings que describen cada libro en el formato "Título por Autor". Luego, usa .forEach para imprimir cada string en la consola
