@@ -58,6 +58,22 @@ const exercise4 = () => {
 
 // TODO: Ejercicio 5: Crear Lista de Compras con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad producto y cantidad. La función debe retornar un array de strings que describen cada producto y su cantidad usando .map y .forEach.
+
+const exercise5 = () => {
+  const carrito = [
+    { producto: "Pan", cantidad: 2 },
+    { producto: "Leche", cantidad: 3 },
+    { producto: "Huevos", cantidad: 12 },
+  ];
+
+  let carritoFormateado = carrito.map((productos) => {
+    return `Producto: ${productos.producto}. Quedan ${productos.cantidad} unidades`;
+  });
+
+  console.log(carritoFormateado);
+};
+// exercise5();
+
 // TODO: Ejercicio 6: Calcular Descuentos con .map y .forEach
 // * Escribe una función que reciba un array de precios y devuelva un nuevo array con un descuento del 10% aplicado a cada precio usando .map. Luego, usa .forEach para imprimir cada precio con su descuento.
 // TODO: Ejercicio 7: Transformar Objetos con .map
