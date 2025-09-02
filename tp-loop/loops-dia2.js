@@ -28,6 +28,19 @@ const exercise2 = () => {
 
 // TODO: Ejercicio 3: Calcular el Promedio con .forEach
 // * Escribe una función que reciba un array de números y devuelva el promedio de todos los elementos usando el método .forEach.
+
+const exercise3 = () => {
+  let arrayNumeros = [2, 2, 2, 3, 3, 3, 4, 4, 4];
+
+  let suma = 0;
+
+  arrayNumeros.forEach((element) => {
+    suma += element;
+  });
+  console.log(suma / arrayNumeros.length);
+};
+// exercise3();
+
 // TODO: Ejercicio 4: Contar Elementos con .forEach
 // * Escribe una función que reciba un array de números y cuente cuántos de ellos son mayores a 10  sando el método .forEach.
 // TODO: Ejercicio 5: Crear Lista de Compras con .map y .forEach
