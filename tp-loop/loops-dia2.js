@@ -15,6 +15,17 @@ const exercise1 = () => {
 
 // TODO: Ejercicio 2: Convertir Números a Strings con .map
 // * Escribe una función que reciba un array de números y devuelva un nuevo array con cada número convertido a string usando el método .map.
+
+const exercise2 = () => {
+  let arrayNumeros = [1, 2, 3, 4, 5, 6];
+
+  let nuevoArray = arrayNumeros.map((a) => {
+    return `${a}`;
+  });
+  console.log(nuevoArray);
+};
+// exercise2();
+
 // TODO: Ejercicio 3: Calcular el Promedio con .forEach
 // * Escribe una función que reciba un array de números y devuelva el promedio de todos los elementos usando el método .forEach.
 // TODO: Ejercicio 4: Contar Elementos con .forEach
