@@ -159,3 +159,19 @@ const exercise9 = () => {
 
 // TODO: Ejercicio 10: Crear Lista de Libros con .map y .forEach
 // * Crea una función que reciba un array de objetos, donde cada objeto tiene una propiedad titulo y autor. La función debe retornar un nuevo array de strings que describen cada libro en el formato "Título por Autor". Luego, usa .forEach para imprimir cada string en la consola
+
+const exercise10 = () => {
+  const libros = [
+    { titulo: "alicia pais", autor: "jack" },
+    { titulo: "gato con zapas", autor: "bartolomeo" },
+    { titulo: "amor y robot", autor: "david" },
+  ];
+
+  function formatearLibro(libros) {
+    return libros.map((lib) => `${lib.titulo} por ${lib.autor}`);
+  }
+
+  const formatoLibros = formatearLibro(libros);
+  formatoLibros.forEach((lib) => console.log(lib));
+};
+// exercise10();
