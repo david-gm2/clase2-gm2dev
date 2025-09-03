@@ -205,3 +205,14 @@ function eliminarTelefono(persona) {
   return personaSinTelefono;
 }
 
+// =============================
+// PARTE 5: Spread + Condicionales
+// =============================
+
+// TODO 1: combinacionPersonajes
+function combinacionPersonajes(personajes1, personajes2) {
+  const { nombre } = personajes1;
+  const informacion = { habilidades: [...personajes1.habilidades], ...personajes2.atributos };
+  return { nombre, informacion };
+}
+
