@@ -47,3 +47,23 @@ const {
 } = shrek4;
 console.log(n4, primerAmigo); 
 
+// TODO 7: Array de objetos
+const personajes = [
+  { nombre: "Shrek", edad: 35 },
+  { nombre: "Burro", edad: 25 },
+  { nombre: "Fiona", edad: 28 },
+];
+const [
+  { nombre: nombreShrek, edad: edadShrek },
+  { nombre: nombreBurro, edad: edadBurro },
+  { nombre: nombreFiona2, edad: edadFiona },
+] = personajes;
+console.log(
+  nombreShrek,
+  edadShrek,
+  nombreBurro,
+  edadBurro,
+  nombreFiona2,
+  edadFiona
+);
+
