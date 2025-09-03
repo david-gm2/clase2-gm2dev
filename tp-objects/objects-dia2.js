@@ -95,3 +95,15 @@ const { titulo, personajes: pers } = pelicula;
 const personajesPrincipales = pers.filter(({ rol }) => rol === "principal").map(({ nombre }) => nombre);
 console.log(titulo, personajesPrincipales);
 
+// TODO 3: Misiones con anidación
+const misiones = {
+  titulo: "Aventura en el Pantano",
+  año: 2002,
+  detalles: {
+    misionPrincipal: { descripcion: "Salvar el pantano", personajes: ["Shrek", "Burro"] },
+    misionSecundaria: { descripcion: "Rescatar a Fiona", personajes: ["Fiona", "Dragona"] }
+  }
+};
+const { detalles: { misionPrincipal: { descripcion: descPrincipal }, misionSecundaria: { personajes: persSecundarios } } } = misiones;
+console.log(descPrincipal, persSecundarios);
+
