@@ -166,3 +166,17 @@ let personajesUnir = [
 ];
 console.log(unirPersonajes(personajesUnir));
 
+// TODO 4: resumenPersonajes
+function resumenPersonajes(personajes) {
+  const nombres = personajes.map(({ info: { nombre } }) => nombre);
+  const edadesMayores = personajes.map(({ info: { edad } }) => edad).filter(edad => edad > 30);
+  const categorias = personajes.some(({ info: { edad } }) => edad > 40) ? ["mayoresDe40"] : [];
+  return { nombres, edadesMayores, categorias };
+}
+let personajesResumen = [
+  { info: { nombre: "Shrek", edad: 35, reino: "Pantano" } },
+  { info: { nombre: "Fiona", edad: 28, reino: "Duloc" } },
+  { info: { nombre: "Rey Harold", edad: 45, reino: "Far Far Away" } }
+];
+console.log(resumenPersonajes(personajesResumen));
+
