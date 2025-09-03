@@ -107,3 +107,17 @@ const misiones = {
 const { detalles: { misionPrincipal: { descripcion: descPrincipal }, misionSecundaria: { personajes: persSecundarios } } } = misiones;
 console.log(descPrincipal, persSecundarios);
 
+// TODO 4: Evento con invitados confirmados
+const evento = {
+  nombre: "Fiesta del Pantano",
+  fecha: "2025-09-01",
+  invitados: [
+    { nombre: "Shrek", especie: "Ogro", confirmado: true },
+    { nombre: "Burro", especie: "Burro", confirmado: false },
+    { nombre: "Fiona", especie: "Ogro", confirmado: true }
+  ]
+};
+const { nombre: nombreEvento, invitados } = evento;
+const invitadosConfirmados = invitados.filter(({ confirmado }) => confirmado).map(({ nombre }) => nombre);
+console.log(nombreEvento, invitadosConfirmados);
+
