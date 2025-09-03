@@ -199,3 +199,9 @@ function agregarCaracteristicas(vehiculo, caracteristicas) {
   return caracteristicas.color === "rojo" ? { ...vehiculo, ...caracteristicas } : { ...vehiculo };
 }
 
+// TODO 4: eliminarTelefono
+function eliminarTelefono(persona) {
+  const { telefono, ...personaSinTelefono } = persona;
+  return personaSinTelefono;
+}
+
