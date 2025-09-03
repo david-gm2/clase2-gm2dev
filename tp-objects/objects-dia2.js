@@ -216,3 +216,9 @@ function combinacionPersonajes(personajes1, personajes2) {
   return { nombre, informacion };
 }
 
+// TODO 2: combinarClientes
+function combinarClientes(cliente1, cliente2) {
+  const perfilCompleto = { ...cliente1.datos, ...cliente2.informacion };
+  return { nombre: cliente1.nombre, perfilCompleto };
+}
+
