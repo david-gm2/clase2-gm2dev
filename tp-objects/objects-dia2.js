@@ -81,3 +81,17 @@ const shrekAvanzado = {
 const { nombre: shrekNom, especie: shrekEsp, amigos: [{ nombre: amigo1 }, { nombre: amigo2 }] } = shrekAvanzado;
 console.log(shrekNom, shrekEsp, amigo1, amigo2);
 
+// TODO 2: Película con personajes principales
+const pelicula = {
+  titulo: "Shrek",
+  año: 2001,
+  personajes: [
+    { nombre: "Shrek", especie: "Ogro", rol: "principal" },
+    { nombre: "Burro", especie: "Burro", rol: "principal" },
+    { nombre: "Lord Farquaad", especie: "Humano", rol: "secundario" }
+  ]
+};
+const { titulo, personajes: pers } = pelicula;
+const personajesPrincipales = pers.filter(({ rol }) => rol === "principal").map(({ nombre }) => nombre);
+console.log(titulo, personajesPrincipales);
+
