@@ -121,3 +121,17 @@ const { nombre: nombreEvento, invitados } = evento;
 const invitadosConfirmados = invitados.filter(({ confirmado }) => confirmado).map(({ nombre }) => nombre);
 console.log(nombreEvento, invitadosConfirmados);
 
+// TODO 5: Banda con miembros experimentados
+const banda = {
+  nombre: "Ogres Rock",
+  genero: "Rock",
+  miembros: [
+    { nombre: "Shrek", instrumento: "Guitarra", experiencia: 10 },
+    { nombre: "Burro", instrumento: "Batería", experiencia: 3 },
+    { nombre: "Fiona", instrumento: "Voz", experiencia: 6 }
+  ]
+};
+const { genero, miembros } = banda;
+const instrumentosExpertos = miembros.filter(({ experiencia }) => experiencia > 5).map(({ instrumento }) => instrumento);
+console.log(genero, instrumentosExpertos);
+
