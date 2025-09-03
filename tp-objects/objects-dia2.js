@@ -194,3 +194,8 @@ function actualizarDatos(datosPersonales, datosContacto) {
   return { ...datosPersonales, ...datosContacto };
 }
 
+// TODO 3: agregarCaracteristicas solo si color === 'rojo'
+function agregarCaracteristicas(vehiculo, caracteristicas) {
+  return caracteristicas.color === "rojo" ? { ...vehiculo, ...caracteristicas } : { ...vehiculo };
+}
+
