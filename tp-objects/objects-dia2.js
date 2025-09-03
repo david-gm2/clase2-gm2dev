@@ -135,3 +135,20 @@ const { genero, miembros } = banda;
 const instrumentosExpertos = miembros.filter(({ experiencia }) => experiencia > 5).map(({ instrumento }) => instrumento);
 console.log(genero, instrumentosExpertos);
 
+// =============================
+// PARTE 3: Funciones + Destructuring
+// =============================
+
+// TODO 1: crearPareja
+function crearPareja(ogro, princesa) {
+  const { nombre: nombreOgro, edad: edadOgro, ...restOgro } = ogro;
+  const { nombre: nombrePrincesa, edad: edadPrincesa, ...restPrincesa } = princesa;
+
+  const pareja = { nombreOgro, nombrePrincesa, ...restOgro, ...restPrincesa };
+
+  if (edadOgro > 28 || edadPrincesa > 28) {
+    pareja.misiones = ["Primera misión"];
+  }
+  return pareja;
+}
+
