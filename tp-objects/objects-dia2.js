@@ -189,3 +189,8 @@ function agregarHobbies(persona, nuevosHobbies) {
   return { ...persona, hobbies: [...persona.hobbies, ...nuevosHobbies.hobbies] };
 }
 
+// TODO 2: actualizarDatos
+function actualizarDatos(datosPersonales, datosContacto) {
+  return { ...datosPersonales, ...datosContacto };
+}
+
