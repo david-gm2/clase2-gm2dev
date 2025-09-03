@@ -24,3 +24,13 @@ function mostrarPersonaje({ nombre, especie }) {
 }
 mostrarPersonaje(shrek2);
 
+// TODO 5: Destructuring con valor predeterminado
+const shrek3 = {
+  nombre: "Shrek",
+  especie: "Ogro",
+  edad: 35,
+  amigos: ["Burro", "Fiona"],
+};
+const { nombre: n3, especie: e3, amigos, enemigos = [] } = shrek3;
+console.log(n3, e3, amigos, enemigos); 
+
