@@ -231,3 +231,11 @@ function actualizarPerfil(usuario, detalles) {
   }
 }
 
+// TODO 4: actualizarInfo
+function actualizarInfo(usuario, detalles, palabrasClave) {
+  if (palabrasClave.includes(usuario.colorFavorito)) {
+    return { ...usuario, ...detalles };
+  } else {
+    return { ...usuario, direccion: "desconocida", telefono: "no disponible", ocupacion: "ninguna" };
+  }
+}
