@@ -34,3 +34,16 @@ const shrek3 = {
 const { nombre: n3, especie: e3, amigos, enemigos = [] } = shrek3;
 console.log(n3, e3, amigos, enemigos); 
 
+// TODO 6: Extraer primer amigo
+const shrek4 = {
+  nombre: "Shrek",
+  especie: "Ogro",
+  edad: 35,
+  amigos: ["Burro", "Fiona"],
+};
+const {
+  nombre: n4,
+  amigos: [primerAmigo],
+} = shrek4;
+console.log(n4, primerAmigo); 
+
