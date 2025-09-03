@@ -67,3 +67,17 @@ console.log(
   edadFiona
 );
 
+// =============================
+// PARTE 2: Destructuring Avanzado
+// =============================
+
+// TODO 1: Shrek con amigos (objetos)
+const shrekAvanzado = {
+  nombre: "Shrek",
+  especie: "Ogro",
+  edad: 35,
+  amigos: [{ nombre: "Burro", especie: "Burro" }, { nombre: "Fiona", especie: "Ogro" }]
+};
+const { nombre: shrekNom, especie: shrekEsp, amigos: [{ nombre: amigo1 }, { nombre: amigo2 }] } = shrekAvanzado;
+console.log(shrekNom, shrekEsp, amigo1, amigo2);
+
