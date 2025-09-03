@@ -1,118 +1,118 @@
 // ** Loops
-const prompt = require("prompt-sync")();
-function verifyNumber(...valores) {
-  return valores.every((v) => typeof v === "number" && !Number.isNaN(v));
+const prompt = require('prompt-sync')()
+function verifyNumber (...valores) {
+  return valores.every((v) => typeof v === 'number' && !Number.isNaN(v))
 }
 // TODO: 1. Usa el bucle for para mostrar números pares del 2 al 30.
 
-function exercise1() {
+function exercise1 () {
   for (let i = 2; i <= 30; i++) {
-    console.log(i);
+    console.log(i)
   }
 }
 
-// exercise1();
+exercise1()
 
 // TODO: 2. Escribe un bucle que solicite un número mayor que 250. Si el usuario ingresa otro número debes pedirle que ingrese un valor nuevo El bucle debe pedir un número hasta que el usuario ingrese un número mayor que 250 o lo cancele Aquí podemos asumir que el usuario solo ingresará números.
 
-function exercise2() {
-  let numIngresado = -1;
+function exercise2 () {
+  let numIngresado = -1
 
   while (true) {
     numIngresado = parseInt(
       prompt('Ingrese un número mayor a 250 (escriba "0" si desea salir): ')
-    );
+    )
 
     if (!verifyNumber(numIngresado)) {
-      console.log("Ingrese un número válido :)");
-      continue;
+      console.log('Ingrese un número válido :)')
+      continue
     }
 
     if (numIngresado === 0) {
-      console.log("👋 Saliste del programa.");
-      break;
+      console.log('👋 Saliste del programa.')
+      break
     }
 
     if (numIngresado <= 250) {
-      console.log("❌ El número debe ser mayor a 250");
-      continue;
+      console.log('❌ El número debe ser mayor a 250')
+      continue
     }
 
     console.log(
       `✅ Número validado correctamente\nNúmero ingresado: ${numIngresado}`
-    );
-    break;
+    )
+    break
   }
 }
 
-// exercise2();
+exercise2()
 
 // TODO: 3. Un número entero mayor que 1 es llamado primo si no puede ser dividido sin un resto por ningún número excepto 1 y él mismo. En otras palabras, n > 1 es un primo si no puede ser dividido exactamente por ningún número excepto 1 y n. Por ejemplo, 5 es un primo, porque no puede ser dividido exactamente por 2, 3 y 4. Escribe el código que muestre números primos en el intervalo de 2 a n. Ejemplo: Para n = 10 el resultado será 2, 3, 5, 7.
 
-function exercise3() {
-  let rango = -1;
+function exercise3 () {
+  let rango = -1
 
   while (true) {
     rango = parseInt(
       prompt(
         "Ingrese el rango de numeros para ver cuales son primos (escriba '0' si desea salir): "
       )
-    );
+    )
     if (!verifyNumber(rango)) {
-      console.log("Ingrese un numero valido :)");
-      continue;
+      console.log('Ingrese un numero valido :)')
+      continue
     }
     if (rango === 0) {
-      console.log("👋 Saliste del programa.");
-      break;
+      console.log('👋 Saliste del programa.')
+      break
     }
 
     if (rango <= 2) {
-      console.log("El número debe ser mayor a 2.");
-      continue;
+      console.log('El número debe ser mayor a 2.')
+      continue
     }
 
-    let multiplos = [];
+    const multiplos = []
 
     for (let i = 2; i <= rango; i++) {
-      let primo = true;
+      let primo = true
       for (let j = 2; j < i; j++) {
         if (i % j === 0) {
-          primo = false;
+          primo = false
         }
       }
       if (primo) {
-        multiplos.push(i);
+        multiplos.push(i)
       }
     }
 
-    console.log(multiplos);
+    console.log(multiplos)
   }
 }
 
-// exercise3();
+exercise3();
 
 // TODO: 4. Ingrese un número y mostrar su potencia n^2, repetir este proceso hasta que se ingrese un número negativo
 
-function exercise4() {
-  let numPotencia = 0;
+function exercise4 () {
+  let numPotencia = 0
 
   while (true) {
     numPotencia = parseInt(
       prompt(
-        "Ingrese un numero para saber su n^2 (escriba un numero negatvo (ej.: -2) para salir del programa): "
+        'Ingrese un numero para saber su n^2 (escriba un numero negatvo (ej.: -2) para salir del programa): '
       )
-    );
+    )
     if (!verifyNumber(numPotencia)) {
-      console.log("Ingrese un numero valido :)");
-      continue;
+      console.log('Ingrese un numero valido :)')
+      continue
     }
     if (numPotencia < 0) {
-      console.log("👋 Saliste del programa.");
-      break;
+      console.log('👋 Saliste del programa.')
+      break
     }
 
-    console.log(`La potencia n^2 de ${numPotencia} = ${numPotencia ** 2}`);
+    console.log(`La potencia n^2 de ${numPotencia} = ${numPotencia ** 2}`)
   }
 }
 
@@ -120,31 +120,31 @@ function exercise4() {
 
 // TODO: 5. Pedir un número hasta que se ingrese el número 0 o negativo, luego mostrar la suma de todos los números ingresados
 
-function exercise5() {
-  let numSuma = [];
+function exercise5 () {
+  const numSuma = []
 
   while (true) {
     num = parseInt(
       prompt(
         "Ingrese todos los numeros a suamr (escriba un numero negatvo (ej.: '-2') o '0' para salir del programa): "
       )
-    );
+    )
     if (!verifyNumber(num)) {
-      console.log("Ingrese un numero valido :)");
-      continue;
+      console.log('Ingrese un numero valido :)')
+      continue
     }
     if (num <= 0) {
-      console.log("👋 Saliste del programa.");
-      break;
+      console.log('👋 Saliste del programa.')
+      break
     }
 
-    numSuma.push(num);
-    console.log(`El numero ${num} a sido ingresado correctamente`);
+    numSuma.push(num)
+    console.log(`El numero ${num} a sido ingresado correctamente`)
   }
 
   if (numSuma.length != 0) {
-    let sumaDeTodosLosNumeros = numSuma.reduce((acum, curr) => acum + curr, 0);
-    console.log(`La sumatoria fianl es: ${sumaDeTodosLosNumeros}`);
+    const sumaDeTodosLosNumeros = numSuma.reduce((acum, curr) => acum + curr, 0)
+    console.log(`La sumatoria fianl es: ${sumaDeTodosLosNumeros}`)
   }
 }
 
@@ -152,16 +152,16 @@ function exercise5() {
 
 // TODO: 6. Crea un objeto con algunas propiedades y utiliza un bucle for...in para imprimir cada propiedad y su valor en la consola.
 
-function exercise6() {
-  let usuario = {
-    nombre: "David",
+function exercise6 () {
+  const usuario = {
+    nombre: 'David',
     edad: 19,
-    nacionalidad: "Colombiana",
-  };
+    nacionalidad: 'Colombiana'
+  }
 
-  for (var i in usuario) {
+  for (const i in usuario) {
     if (usuario.hasOwnProperty(i)) {
-      console.log(`${i}: ${usuario[i]}`);
+      console.log(`${i}: ${usuario[i]}`)
     }
   }
 }
@@ -170,30 +170,30 @@ function exercise6() {
 
 // TODO: 7. Utiliza un bucle do...while para pedir al usuario que ingrese un número positivo. Continúa pidiendo hasta que ingrese un número positivo.
 
-function exercise7() {
-  let number = 0;
+function exercise7 () {
+  let number = 0
   do {
-    number = parseInt(prompt("Ingrese un numero positivo: "));
+    number = parseInt(prompt('Ingrese un numero positivo: '))
     if (!verifyNumber(number)) {
-      console.log("Ingrese un numero valido :)");
-      continue;
+      console.log('Ingrese un numero valido :)')
+      continue
     }
     if (number < 0) {
-      console.log("El número debe ser positivo.");
-      continue;
+      console.log('El número debe ser positivo.')
+      continue
     }
-  } while (number < 0);
+  } while (number < 0)
 }
 
 // exercise7();
 
 // TODO: 8. Crea un array de nombres. Utiliza un bucle for-of para imprimir cada nombre en la consola.
 
-function exercise8() {
-  let nombres = ["juan", "gabrel", "ivan", "david"];
+function exercise8 () {
+  const nombres = ['juan', 'gabrel', 'ivan', 'david']
 
-  for (let element of nombres) {
-    console.log(element);
+  for (const element of nombres) {
+    console.log(element)
   }
 }
 
@@ -201,12 +201,12 @@ function exercise8() {
 
 // TODO: 9. Crea un array de números. Utiliza un bucle for-of para imprimir en la consola los números hasta encontrar el número 5, luego detén el bucle
 
-function exercise9() {
-  let numeros = [1, 2, 3, 4, 5, 6, 7];
+function exercise9 () {
+  const numeros = [1, 2, 3, 4, 5, 6, 7]
 
   for (const element of numeros) {
-    if (element === 5) break;
-    console.log(element);
+    if (element === 5) break
+    console.log(element)
   }
 }
 
@@ -214,12 +214,12 @@ function exercise9() {
 
 // TODO: 10. Utiliza un bucle for-of para imprimir en la consola cada elemento del array y su posición (índice)
 
-function exercise10() {
-  let numeros = ["frutilla", "color", "coche", "abogado"];
+function exercise10 () {
+  const numeros = ['frutilla', 'color', 'coche', 'abogado']
 
   // El metodo .entries() itera sobre el array devolviendo un array [index, element]
   for (const [index, element] of numeros.entries()) {
-    console.log(`Element: ${element}, Position: ${index}`);
+    console.log(`Element: ${element}, Position: ${index}`)
   }
 }
 
@@ -227,35 +227,35 @@ function exercise10() {
 
 // TODO: 11. Crea un programa que pida ingresar un número, y muestre su factorial. Este se calcula multiplicando el mismo número y todos los números que le anteceden hasta el 1. Por ejemplo: 4 ⇒ 4 * 3 * 2 * 1 = 2.
 
-function exercise11() {
+function exercise11 () {
   while (true) {
-    let numFactorial = parseInt(
+    const numFactorial = parseInt(
       prompt(
         'Ingrese  un numero para mostrar su factorial (escriba "0" para salir del programa): '
       )
-    );
+    )
 
     if (!verifyNumber(numFactorial)) {
-      console.log("⚠️ Ingrese un numero valido :)");
-      continue;
+      console.log('⚠️ Ingrese un numero valido :)')
+      continue
     }
     if (numFactorial === 0) {
-      console.log("👋 Saliste del programa.");
-      break;
+      console.log('👋 Saliste del programa.')
+      break
     }
 
     if (numFactorial < 0) {
-      console.log("❌ El número debe ser positivo");
-      continue;
+      console.log('❌ El número debe ser positivo')
+      continue
     }
 
-    let resultadoFactorial = 1;
+    let resultadoFactorial = 1
 
     for (let i = numFactorial; i >= 1; i--) {
-      resultadoFactorial *= i;
+      resultadoFactorial *= i
     }
 
-    console.log(`El factorial de ${numFactorial} es ${resultadoFactorial}`);
+    console.log(`El factorial de ${numFactorial} es ${resultadoFactorial}`)
   }
 }
 
@@ -263,30 +263,30 @@ function exercise11() {
 
 // TODO: 12. Crear un programa que pida ingresar usuario y contraseña. El programa debe permitir hasta 3 intentos, cuando el usuario y/o la contraseña son incorrectos. Si se ingresa correctamente ambos antes de 3 intentos erróneos, debe mostrar un mensaje de bienvenida. Si se ingresan 3 intentos erróneos, debe mostrar un mensaje de error y terminar el programa. El usuario y la contraseña ya deben estar guardadas en variables.
 
-function exercise12() {
-  let usuario = {
-    nombre: "david",
-    password: "123",
-  };
+function exercise12 () {
+  const usuario = {
+    nombre: 'david',
+    password: '123'
+  }
 
-  let intentos = 0;
+  let intentos = 0
 
   while (intentos < 3) {
-    nombreIngresado = prompt("Ingrese el nombre de usuairo: ");
-    passwordIngresado = prompt("Ingrese el password del usuairo: ");
+    nombreIngresado = prompt('Ingrese el nombre de usuairo: ')
+    passwordIngresado = prompt('Ingrese el password del usuairo: ')
 
     if (
       nombreIngresado != usuario.nombre ||
       passwordIngresado != usuario.password
     ) {
-      intentos++;
-      console.log("El nombre de usuarioo o contrasena son incorrectos");
-      console.log(`Le quedan ${3 - intentos} intentos`);
+      intentos++
+      console.log('El nombre de usuarioo o contrasena son incorrectos')
+      console.log(`Le quedan ${3 - intentos} intentos`)
     } else if (
       nombreIngresado === usuario.nombre &&
       passwordIngresado === usuario.password
     ) {
-      console.log(`Bienvenido ${usuaior.nombre}`);
+      console.log(`Bienvenido ${usuaior.nombre}`)
     }
   }
 }
@@ -297,6 +297,21 @@ function exercise12() {
 // - arrayMultiplos(2, 10) debe retornar [2, 4, 6, 8, 10, 12, 14, 16, 18, 20].
 // - arrayMultiplos(17, 6) debe retornar [17, 34, 51, 68, 85, 102].
 
+function exercise13 () {
+  const multiplos = []
+  function arrayMultriplos (number, length) {
+    for (let i = 1; i <= length; i++) {
+      multiplos.push(number * i)
+    }
+  }
+  const number = 5
+  const length = 8
+  arrayMultriplos(number, length)
+
+  console.log(multiplos)
+}
+
+// exercise13();
 // 14. Escribe una función llamada arrayContiene que reciba dos parámetros: un array y un elemento. La función debe comprobar si el elemento existe dentro del array. Devuelve "true" si está, o "false" si no está.
 // 15. Escribe una función llamada agregarNumeros que reciba un arreglo de enteros. La función debe sumar todos los enteros y devolver el valor de la suma.
 // 16. Escribe una función llamada promedioResultado que reciba un arreglo de enteros representando resultados de tests. La función debe iterar los elementos del array, calcular y devolver el promedio de puntajes.

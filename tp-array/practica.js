@@ -1,23 +1,23 @@
-let exercises = {
+const exercises = {
   example1: {
     nums: [2, 15, 11, 7],
-    target: 9,
+    target: 9
   },
   example2: {
     nums: [3, 2, 4],
-    target: 6,
+    target: 6
   },
   example3: {
     nums: [3, 3],
-    target: 6,
-  },
-};
+    target: 6
+  }
+}
 
-function encontrarSuma(number) {
+function encontrarSuma (number) {
   for (let i = 0; i < number.nums.length - 1; i++) {
-    let suma = number.nums[i] + number.nums[i + 1];
+    const suma = number.nums[i] + number.nums[i + 1]
     if (suma === number.target) {
-      console.log([number.nums[i], number.nums[i + 1]]);
+      console.log([number.nums[i], number.nums[i + 1]])
     }
   }
 }

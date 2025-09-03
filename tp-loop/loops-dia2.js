@@ -4,56 +4,56 @@
 // * Crea una función que reciba un array de números y devuelva un nuevo array con cada número duplicado usando el método .map.
 
 const exercise1 = () => {
-  let arrayNumeros = [1, 2, 3, 4, 5, 6];
+  const arrayNumeros = [1, 2, 3, 4, 5, 6]
 
-  let nuevoArray = arrayNumeros.map((a) => {
-    return a * 2;
-  });
-  console.log(nuevoArray);
-};
+  const nuevoArray = arrayNumeros.map((a) => {
+    return a * 2
+  })
+  console.log(nuevoArray)
+}
 // exercise1();
 
 // TODO: Ejercicio 2: Convertir Números a Strings con .map
 // * Escribe una función que reciba un array de números y devuelva un nuevo array con cada número convertido a string usando el método .map.
 
 const exercise2 = () => {
-  let arrayNumeros = [1, 2, 3, 4, 5, 6];
+  const arrayNumeros = [1, 2, 3, 4, 5, 6]
 
-  let nuevoArray = arrayNumeros.map((a) => {
-    return `${a}`;
-  });
-  console.log(nuevoArray);
-};
+  const nuevoArray = arrayNumeros.map((a) => {
+    return `${a}`
+  })
+  console.log(nuevoArray)
+}
 // exercise2();
 
 // TODO: Ejercicio 3: Calcular el Promedio con .forEach
 // * Escribe una función que reciba un array de números y devuelva el promedio de todos los elementos usando el método .forEach.
 
 const exercise3 = () => {
-  let arrayNumeros = [2, 2, 2, 3, 3, 3, 4, 4, 4];
+  const arrayNumeros = [2, 2, 2, 3, 3, 3, 4, 4, 4]
 
-  let suma = 0;
+  let suma = 0
 
   arrayNumeros.forEach((element) => {
-    suma += element;
-  });
-  console.log(suma / arrayNumeros.length);
-};
+    suma += element
+  })
+  console.log(suma / arrayNumeros.length)
+}
 // exercise3();
 
 // TODO: Ejercicio 4: Contar Elementos con .forEach
 // * Escribe una función que reciba un array de números y cuente cuántos de ellos son mayores a 10  sando el método .forEach.
 
 const exercise4 = () => {
-  let arrayNumeros = [2, 23, 1, 5, 67, 4, 34, 11, 23, 1, 8, 6, 10];
+  const arrayNumeros = [2, 23, 1, 5, 67, 4, 34, 11, 23, 1, 8, 6, 10]
 
-  let contador = 0;
+  let contador = 0
 
   arrayNumeros.forEach((element) => {
-    element > 10 ? contador++ : null;
-  });
-  console.log(contador);
-};
+    element > 10 ? contador++ : null
+  })
+  console.log(contador)
+}
 // exercise4();
 
 // TODO: Ejercicio 5: Crear Lista de Compras con .map y .forEach
@@ -61,34 +61,34 @@ const exercise4 = () => {
 
 const exercise5 = () => {
   const carrito = [
-    { producto: "Pan", cantidad: 2 },
-    { producto: "Leche", cantidad: 3 },
-    { producto: "Huevos", cantidad: 12 },
-  ];
+    { producto: 'Pan', cantidad: 2 },
+    { producto: 'Leche', cantidad: 3 },
+    { producto: 'Huevos', cantidad: 12 }
+  ]
 
-  let carritoFormateado = carrito.map((productos) => {
-    return `Producto: ${productos.producto}. Quedan ${productos.cantidad} unidades`;
-  });
+  const carritoFormateado = carrito.map((productos) => {
+    return `Producto: ${productos.producto}. Quedan ${productos.cantidad} unidades`
+  })
 
-  console.log(carritoFormateado);
-};
+  console.log(carritoFormateado)
+}
 // exercise5();
 
 // TODO: Ejercicio 6: Calcular Descuentos con .map y .forEach
 // * Escribe una función que reciba un array de precios y devuelva un nuevo array con un descuento del 10% aplicado a cada precio usando .map. Luego, usa .forEach para imprimir cada precio con su descuento.
 
 const exercise6 = () => {
-  let precios = [2999, 4900, 500, 2300, 4300];
-  let descuento = 0.1;
+  const precios = [2999, 4900, 500, 2300, 4300]
+  const descuento = 0.1
 
-  function hacerDescuento(preciosProductos, descuentoProducto) {
-    return preciosProductos.map((prod) => prod * (1 - descuentoProducto));
+  function hacerDescuento (preciosProductos, descuentoProducto) {
+    return preciosProductos.map((prod) => prod * (1 - descuentoProducto))
   }
 
-  const precioDescuento = hacerDescuento(precios, descuento);
+  const precioDescuento = hacerDescuento(precios, descuento)
 
-  console.log(precioDescuento);
-};
+  console.log(precioDescuento)
+}
 // exercise6();
 
 // TODO: Ejercicio 7: Transformar Objetos con .map
@@ -96,21 +96,21 @@ const exercise6 = () => {
 
 const exercise7 = () => {
   const estudiantes = [
-    { nombre: "david", nota: 9 },
-    { nombre: "ivan", nota: 2 },
-    { nombre: "alex", nota: 5 },
-  ];
+    { nombre: 'david', nota: 9 },
+    { nombre: 'ivan', nota: 2 },
+    { nombre: 'alex', nota: 5 }
+  ]
 
-  function resultadoMateria(estudiantes) {
+  function resultadoMateria (estudiantes) {
     return estudiantes.map((est) => ({
       ...est,
-      aprobada: est.nota >= 5,
-    }));
+      aprobada: est.nota >= 5
+    }))
   }
 
-  let resultadoEstudiantes = resultadoMateria(estudiantes);
-  console.log(resultadoEstudiantes);
-};
+  const resultadoEstudiantes = resultadoMateria(estudiantes)
+  console.log(resultadoEstudiantes)
+}
 // exercise7();
 
 // TODO: Ejercicio 8: Calcular Promedio de Notas con .forEach
@@ -118,20 +118,20 @@ const exercise7 = () => {
 
 const exercise8 = () => {
   const estudiantes = [
-    { nombre: "david", nota: 6 },
-    { nombre: "ivan", nota: 4 },
-    { nombre: "alex", nota: 5 },
-  ];
+    { nombre: 'david', nota: 6 },
+    { nombre: 'ivan', nota: 4 },
+    { nombre: 'alex', nota: 5 }
+  ]
 
-  function crearPromedioEstudiantes(estudiantes) {
-    let contador = 0;
-    estudiantes.forEach((est) => (contador = contador + est.nota));
-    return contador / estudiantes.length;
+  function crearPromedioEstudiantes (estudiantes) {
+    let contador = 0
+    estudiantes.forEach((est) => (contador = contador + est.nota))
+    return contador / estudiantes.length
   }
 
-  const promedios = crearPromedioEstudiantes(estudiantes);
-  console.log(promedios);
-};
+  const promedios = crearPromedioEstudiantes(estudiantes)
+  console.log(promedios)
+}
 // exercise8();
 
 // TODO: Ejercicio 9: Crear Lista de Productos con Precios Descontados con .map y .forEach
@@ -139,22 +139,22 @@ const exercise8 = () => {
 
 const exercise9 = () => {
   const inventario = [
-    { producto: "zapatillas", precio: 14000 },
-    { producto: "buzo", precio: 17000 },
-    { producto: "gorra", precio: 8000 },
-  ];
-  const descuento = 0.1;
+    { producto: 'zapatillas', precio: 14000 },
+    { producto: 'buzo', precio: 17000 },
+    { producto: 'gorra', precio: 8000 }
+  ]
+  const descuento = 0.1
 
-  function hacerDescuento(inventario, descuento) {
+  function hacerDescuento (inventario, descuento) {
     return inventario.map((prod) => ({
       ...prod,
-      precioConDescuento: prod.precio * (1 - descuento),
-    }));
+      precioConDescuento: prod.precio * (1 - descuento)
+    }))
   }
-  const productosConDescuento = hacerDescuento(inventario, descuento);
+  const productosConDescuento = hacerDescuento(inventario, descuento)
 
-  productosConDescuento.forEach((p) => console.log(p));
-};
+  productosConDescuento.forEach((p) => console.log(p))
+}
 // exercise9();
 
 // TODO: Ejercicio 10: Crear Lista de Libros con .map y .forEach
@@ -162,16 +162,27 @@ const exercise9 = () => {
 
 const exercise10 = () => {
   const libros = [
-    { titulo: "alicia pais", autor: "jack" },
-    { titulo: "gato con zapas", autor: "bartolomeo" },
-    { titulo: "amor y robot", autor: "david" },
-  ];
+    { titulo: 'alicia pais', autor: 'jack' },
+    { titulo: 'gato con zapas', autor: 'bartolomeo' },
+    { titulo: 'amor y robot', autor: 'david' }
+  ]
 
-  function formatearLibro(libros) {
-    return libros.map((lib) => `${lib.titulo} por ${lib.autor}`);
+  function formatearLibro (libros) {
+    return libros.map((lib) => `${lib.titulo} por ${lib.autor}`)
   }
 
-  const formatoLibros = formatearLibro(libros);
-  formatoLibros.forEach((lib) => console.log(lib));
-};
+  const formatoLibros = formatearLibro(libros)
+  formatoLibros.forEach((lib) => console.log(lib))
+}
 // exercise10();
+
+// TODO: Ejercicio 11: Escribe una función que reciba un array de strings (nombres de personas). La  función debe retornar un nuevo array de strings en el formato "Hola, soy [nombre]" usando  .map.
+
+function exercise11 () {
+  const personasNombres = [
+    { nombre: 'david' },
+    { nombre: 'diego' },
+    { nombre: 'axel' },
+    { nombre: 'ivan' }
+  ]
+}
