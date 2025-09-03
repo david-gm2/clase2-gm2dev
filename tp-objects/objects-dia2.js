@@ -152,3 +152,17 @@ function crearPareja(ogro, princesa) {
   return pareja;
 }
 
+// TODO 3: unirPersonajes
+function unirPersonajes(personajes) {
+  const nombres = personajes.map(({ nombre }) => nombre);
+  const reinos = personajes.map(({ reino }) => reino);
+  const lugaresImportantes = personajes.some(({ reino }) => reino === "Pantano") ? ["Pantano"] : [];
+  return { nombres, reinos, lugaresImportantes };
+}
+let personajesUnir = [
+  { nombre: "Shrek", reino: "Pantano" },
+  { nombre: "Fiona", reino: "Duloc" },
+  { nombre: "Burro", reino: "Pantano" }
+];
+console.log(unirPersonajes(personajesUnir));
+
