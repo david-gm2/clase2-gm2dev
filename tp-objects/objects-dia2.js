@@ -17,3 +17,10 @@ const fiona = { nombre: "Fiona", especie: "Ogro" };
 const { nombre: nombreFiona, ocupacion = "desconocida" } = fiona;
 console.log(nombreFiona, ocupacion); 
 
+// TODO 4: Destructuring en parámetros de función
+const shrek2 = { nombre: "Shrek", especie: "Ogro", edad: 35 };
+function mostrarPersonaje({ nombre, especie }) {
+  console.log(`Nombre: ${nombre}, Especie: ${especie}`);
+}
+mostrarPersonaje(shrek2);
+
