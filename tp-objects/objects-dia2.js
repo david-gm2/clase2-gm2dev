@@ -180,3 +180,12 @@ let personajesResumen = [
 ];
 console.log(resumenPersonajes(personajesResumen));
 
+// =============================
+// PARTE 4: Spread Operator
+// =============================
+
+// TODO 1: agregarHobbies
+function agregarHobbies(persona, nuevosHobbies) {
+  return { ...persona, hobbies: [...persona.hobbies, ...nuevosHobbies.hobbies] };
+}
+
