@@ -222,3 +222,12 @@ function combinarClientes(cliente1, cliente2) {
   return { nombre: cliente1.nombre, perfilCompleto };
 }
 
+// TODO 3: actualizarPerfil
+function actualizarPerfil(usuario, detalles) {
+  if (usuario.edad > 25) {
+    return { ...usuario, ...(usuario.colorFavorito === "morado" && { colorFavorito: usuario.colorFavorito }), ...detalles };
+  } else {
+    return { ...usuario, direccion: "desconocida", telefono: "no disponible" };
+  }
+}
+
